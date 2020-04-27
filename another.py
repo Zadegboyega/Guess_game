@@ -49,7 +49,7 @@ while medium_guess_count < m_chances:
                 print("You have " , int(m_chances - medium_guess_count) , "chances left" )  
     
    
-        except:
+        except ValueError:
             print("Please enter a whole number!")
            
 #while loop for hard level
@@ -65,5 +65,5 @@ while hard_guess_count < h_chances:
                 print("Wrong number, try again.")
                 print("You have " , int(h_chances - hard_guess_count) , "chances left" )
     
-        except:
+        except ValueError:
             print("Please enter a whole number!")
